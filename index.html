@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>AIMゲーム</title>
+  </head>
+  <body>
+
+    <!-- タイトル画面 -->
+    <input type="button" value="開始" class="start-btn" id="startBtn">
+    <input type="button" value="もう一度" class="reset-btn" id="resetBtn" disabled>
+    <label class="checkbox" for="checkbox"><input type="checkbox" id="checkbox" checked>エフェクト</label>
+    <div class="timer" id="timer">3</div>
+
+    <!-- ゲーム画面 -->
+    <div class="target-area" id="targetArea">
+      <div class="cover" id="cover"></div>
+    </div>
+
+    <!-- 隠し要素 -->
+    <div class="easter-egg" id="easterEgg"></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
