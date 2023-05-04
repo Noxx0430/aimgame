@@ -10,12 +10,17 @@
     <!-- タイトル画面 -->
     <input type="button" value="開始" class="start-btn" id="startBtn">
     <input type="button" value="もう一度" class="reset-btn" id="resetBtn" disabled>
-    <label class="checkbox" for="checkbox"><input type="checkbox" id="checkbox" checked>エフェクト</label>
+    <div class="setting" id="setting">
+      <label for="effectCheck"><input type="checkbox" id="effectCheck" checked>エフェクト</label>
+      <label for="volumeCheck"><input type="checkbox" id="volumeCheck" checked>ボリューム</label>
+    </div>
     <div class="timer" id="timer">3</div>
 
     <!-- ゲーム画面 -->
     <div class="target-area" id="targetArea">
+      <div class="counter" id="counter"></div>
       <div class="cover" id="cover"></div>
+      <div class="target-area-frame" id="targetAreaFrame"></div>
     </div>
 
     <!-- 隠し要素 -->

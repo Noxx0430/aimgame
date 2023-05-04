@@ -69,17 +69,21 @@ body{
 }
 
 /* エフェクトOnOff */
-.checkbox{
+.setting{
   position: absolute;
   top: 5px;
   left: 5px;
+}
+
+.setting label{
+  display: block;
   cursor: pointer;
 }
 
-.checkbox input{
+.setting label input{
   position: relative;
   top: 1px;
-  margin: 0 3px 0 0;
+  margin: 0 5px 0 0;
 }
 
 /* ゲーム画面
@@ -105,8 +109,33 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+  background: none;
   cursor: crosshair;
+  box-sizing: border-box;
   z-index: -1;
+}
+
+.target-area-frame{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 8px #f00;
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.counter{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  text-align: center;
+  line-height: 22px;
 }
 
 /* ターゲット全般・ダミー */
